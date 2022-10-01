@@ -1,76 +1,105 @@
+
 <!DOCTYPE html>
-<html>
+
+<html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <title>Progate</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    
+    <link rel="shortcut icon" href="https://code-step.com/demo/html/portfolio1/img/favicon.ico">
+    <link rel="stylesheet" href="./css/ress.css">
+    <link rel="stylesheet" href="./css/style.css">
+
   </head>
+
   <body>
-    <div class="header">
-      <div class="header-logo">Progate</div>
-      <div class="header-list">
+    <header id="header">
+      <h1 class="site-title"><a href="https://exquisite-pika-42463d.netlify.app/"><img src="./css/logo.svg" alt="My Work"></a></h1>
+      <nav>
         <ul>
-          <li>プログラミングとは</li>
-          <li>学べるレッスン</li>
-          <li>お問い合わせ</li>
+          <li><a href="#about">Profile</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="icon" src="./CSS/icon-instagram.png" alt="インスタグラム"> <!-- noteに変更しとくか -->
+            </a>
+          </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <div class="main">
-      <div class="copy-container">
-        <h1>HELLO WORLD<span>.</span></h1>
-        <h2>プログラミングの世界へようこそ</h2>
-      </div>
-      
-      <div class="contents">
-        <h3 class="section-title">学べるレッスン</h3>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">
-          <p>HTML & CSS</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg">
-          <p>PHP</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg">
-          <p>Ruby</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg">
-          <p>Swift</p>
-        </div>
-      </div>
-      
-      <div class="contact-form">
-        <h3 class="section-title">お問い合わせ</h3>
-        <p>メールアドレス（必須）</p>
-        <!-- <input>要素を追加してください -->
-        
-        <input>
-        
-        <p>お問い合わせ内容（必須）</p>
-        <!-- <textarea>要素を追加してください -->
-        
-        <textarea> </textarea>
-        
-        <p>※必須項目は必ずご入力ください</p>
-        <!-- <input>要素を追加してください -->
-        <input class="contact-submit" type="submit" value="送信" />
-        
-      </div>
-    </div>
+    <!-- header理解完了 -->
 
-    <div class="footer">
-      <div class="footer-logo">Progate</div>
-      <div class="footer-list">
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 200px)" srcset="img/mainvisual-sp.jpg"> <!--　max-width 大きいと表示されない -->
+          <img src="./CSS/IMG_1044.jpg" alt="Background"> 
+        </picture>
+      </div>
+
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">Profile</h2>
         <ul>
-          <li>会社概要</li>
-          <li>採用</li>
-          <li>お問い合わせ</li>
+          <li>石田 翔平</li>
+          <li>住まい　：静岡県 磐田市 
+          <li>出身地　：愛知県 名古屋市西区</li>
+          <li>最終学歴：三重大学大学院 工学研究科 電気電子工学専攻 </li>
+          <li>勤め先　：ヤマハ発動機 技術研究本部 </li>
+          <li>　2015年 ~ 2019年 EVシステム制御開発エンジニア</li>
+          <li>　2020年 ~ 2022年 新規事業企画 兼 UXデザイナー</li>
         </ul>
-      </div>
-    </div>
-  </body>
-</html>
+        <p>
+          運動とか身体を動かすことが好きです。ロードバイク・MTB・剣道・ヨガなどなど。ほかスケッチや電子工作、3Dプリンタなどの創作活動や地域芸術祭のサポーター活動もしております。
+          将来的にワーケーションの機会を活用して、全国各地を巡ることを画策中。
+          
+        </p>
+      </section>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+          <li><img class="works-image" src="./CSS/00.png" alt="テキストテキストテキスト"></li>
+          <li><img class="works-image" src="./CSS/01.png" alt="テキストテキストテキスト"></li>
+          <li><img class="works-image" src="./CSS/02.png" alt="テキストテキストテキスト"></li>
+          <li><img class="works-image" src="./CSS/03.png" alt="テキストテキストテキスト"></li>
+          <li><img class="works-image" src="./CSS/07.png" alt="テキストテキストテキスト"></li>
+          <li><img class="works-image" src="./CSS/08.png" alt="テキストテキストテキスト"></li>
+        </ul>
+      </section>
+
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <dt>2022.08.15</dt>
+          <dd>各種リンク先 更新しました</dd>
+          <dt>2022.08.15</dt>
+          <dd>画像を更新しました。</dd>
+          <dt>2022.08.14</dt>
+          <dd>プロフィールサイトを作成・公開しました。</dd>
+          <dt>2022.08.03</dt>
+          <dd>Tech0 二期生で参加しました。</dd>
+        </dl>
+      </section>
+
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <form action="https://code-step.com/demo/html/portfolio1/#" method="post">
+          <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name"></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email"></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea id="message" name="your-message"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>© MATSUZAKA Takaki </p>
+    </footer>
+
+</body></html>
